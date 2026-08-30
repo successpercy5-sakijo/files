@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dr Mbhiko B Medical Centre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Dr Mbhiko B</h1>
+                <h3> MEDICAL CENTRE</h3>
+            </div>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/a49ac9f74e.js" crossorigin="anonymous"></script>
+    </header>
+    <main class="main-content">
+
+        <div id="page-contact" class="">
+
+            <div class="page-hero">
+                <div class="section-label">Get In Touch</div>
+                <h1>Contact Us</h1>
+                <p>Have a question or ready to get started? Our team responds within 24 hours. We'd love to hear from
+                    you.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div>
+                            <h4>EMAIL</h4>
+
+                            <p><a href="mailto:slavento.delias@gmail.com">slavento.delias@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>CELL</h4>
+                            <a href="tel:0727094404">
+                                <p>072 709 4404</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                        <div>
+                            <h4>LOCATION</h4>
+                            <address>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Plot+22B+Section+A+Sasekani+Centre+Unit+7+Giyani+0826"
+                                    target="_blank" rel="noopener">
+                                    Plot 22 B Section A, Sasekani Centre, Unit No. 7, Giyani 0826
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                        <div>
+                            <h4>WORKING HOURS</h4>
+                            <p>Mon – Fri: 08:00 – 19:00</p>
+                            <p>Sat: 08:00 - 17:00</p>
+                            <p>HOLIDAYS AND SUNDAYS ARE EXCEPTIONAL</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                    </div>
+                </div>
+
+                <form>
+                    <div class="contact-form-box">
+                        <h2>Send Us a Message</h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="c-name">YOUR NAME *</label>
+                                <input type="text" id="c-name" placeholder="Full Name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-phone">PHONE NUMBER</label>
+                                <input type="tel" id="c-phone" placeholder="+27 ..." />
+                            </div>
+                            <div class="form-group full">
+                                <label for="c-email">EMAIL ADDRESS *</label>
+                                <input type="email" id="c-email" placeholder="yourname@gmail.com" required />
+                            </div>
+                            <div class="form-group full">
+                                <label for="c-subject">SUBJECT</label>
+                                <select id="c-subject">
+                                    <option>Book an Appointment</option>
+                                    <option>Request a Quote</option>
+                                    <option>Book One on One</option>
+                                    <option>General Enquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="c-message">MESSAGE *</label>
+                                <textarea id="c-message" placeholder="Tell us how we can help..." required></textarea>
+                            </div>
+                            <div class="form-group full" style="flex-direction:column;gap:0.6rem;">
+                                <label
+                                    style="font-size:0.8rem;font-weight:600;color:#9aa8c8;letter-spacing:0.5px;">PREFERRED
+                                    CONTACT METHOD</label>
+                                <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+                                    <label
+                                        style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;">
+                                        <input type="radio" name="contact_method" value="email" checked
+                                            style="accent-color:#1a3bff;" /> Email
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </label>
+                                    <label
+                                        style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;">
+                                        <input type="radio" name="contact_method" value="phone"
+                                            style="accent-color:#1a3bff;" /> Phone
+                                        <i class="fa-solid fa-phone"></i>
+                                    </label>
+
+                                    <label
+                                        style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;">
+                                        <input type="radio" name="contact_method" value="whatsapp"
+                                            style="accent-color:#1a3bff;" /> WhatsApp
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form-submit" onclick="submitForm('contact-success')">Send Message →</button>
+                        <div id="contact-success" class="success-msg">✅ Message sent! We'll get back to you within 24
+                            hours.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Dr Mbhiko B Medical Centre. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
