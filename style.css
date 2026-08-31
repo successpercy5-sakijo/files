@@ -9,6 +9,7 @@ html,body{
     width: 100%;
     background: linear-gradient(180deg, #dceefb 0%, #b3d7f7, 100%);
     margin: 0;
+    min-height: 100vh;
    
 }
 nav{
