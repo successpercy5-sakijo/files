@@ -1,0 +1,18 @@
+name: Form Submission Handler
+
+on:
+  repository_dispatch:
+    types: [form-submission]
+
+jobs:
+  handle-submission:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log Submission
+        run: |
+          echo "Received form submission!"
+          echo "Event: ${{ github.event.action }}"
+          echo "Payload: ${{ toJson(github.event.client_payload) }}"
